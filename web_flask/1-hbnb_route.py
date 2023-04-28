@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 
 @app.route('/', strict_slashes=False)
-def hello_holberton():
+def index():
     """Returns a string at the root route"""
     return 'Hello HBNB!'
 
@@ -17,4 +17,4 @@ def hbnb():
     return 'HBNB'
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0')
+    app.run(host='0.0.0.0', port=5000)
